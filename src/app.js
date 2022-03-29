@@ -20,7 +20,7 @@ const io = require('socket.io')(server)
 //createAdmin(); // para mejorar el codigo del weon de fazt
 
 // Settings
-app.set("port", process.env.PORT || 4000);
+app.set("port", process.env.PORT || 4010);
 
 // Middlewares
 const corsOptions = {
@@ -73,7 +73,7 @@ client.on('message', (topic, message) => {
   }
 })
 
-server.listen(4000, () => {
+server.listen(4010, () => {
   console.log('server is ok')
 })
 
